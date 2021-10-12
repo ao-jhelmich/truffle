@@ -1,0 +1,751 @@
+{
+  "contractName": "Flip",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "flip",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"flip\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"value\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Flip.sol\":\"Flip\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Flip.sol\":{\"keccak256\":\"0xf52e4e8a8d00204630e1d13c68d860d05beba3d6f4631eabe66fb543c10f72f7\",\"urls\":[\"bzz-raw://d153b3cd7da18777aeba42b4f0b7ebae6598d636725cba1b619a08aced219840\",\"dweb:/ipfs/QmfAFsV9zmNEBTDbv18PfwAAudj3x4oEwoPPKBQ3xFXSXg\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610141806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633fa4f245146100465780636d4ce63c14610068578063cde4efa91461008a575b600080fd5b61004e610094565b604051808215151515815260200191505060405180910390f35b6100706100a6565b604051808215151515815260200191505060405180910390f35b6100926100bc565b005b6000809054906101000a900460ff1681565b60008060009054906101000a900460ff16905090565b6000809054906101000a900460ff16156100ef5760008060006101000a81548160ff02191690831515021790555061010a565b60016000806101000a81548160ff0219169083151502179055505b56fea265627a7a72315820c29781c316e9a00cbdbbf6ca1ffbf877b70e4d3054d124e2e5e41b65f037c2ea64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633fa4f245146100465780636d4ce63c14610068578063cde4efa91461008a575b600080fd5b61004e610094565b604051808215151515815260200191505060405180910390f35b6100706100a6565b604051808215151515815260200191505060405180910390f35b6100926100bc565b005b6000809054906101000a900460ff1681565b60008060009054906101000a900460ff16905090565b6000809054906101000a900460ff16156100ef5760008060006101000a81548160ff02191690831515021790555061010a565b60016000806101000a81548160ff0219169083151502179055505b56fea265627a7a72315820c29781c316e9a00cbdbbf6ca1ffbf877b70e4d3054d124e2e5e41b65f037c2ea64736f6c63430005100032",
+  "sourceMap": "25:254:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:254:1;;;;;;;",
+  "deployedSourceMap": "25:254:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:254:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;45:17;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;206:71;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;69:131;;;:::i;:::-;;45:17;;;;;;;;;;;;;:::o;206:71::-;242:4;265:5;;;;;;;;;;;258:12;;206:71;:::o;69:131::-;106:5;;;;;;;;;;;102:92;;;135:5;127;;:13;;;;;;;;;;;;;;;;;;102:92;;;179:4;171:5;;:12;;;;;;;;;;;;;;;;;;102:92;69:131::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Flip {\n    bool public value;\n\n    function flip() public {\n        if (value) {\n            value = false;\n        } else {\n            value = true;\n        }\n    }\n\n    function get() public view returns (bool) {\n        return value;\n    }\n}\n",
+  "sourcePath": "/Users/jasper/Code/smart-contract/contracts/Flip.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Flip.sol",
+    "exportedSymbols": {
+      "Flip": [
+        73
+      ]
+    },
+    "id": 74,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 46,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 73,
+        "linearizedBaseContracts": [
+          73
+        ],
+        "name": "Flip",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 48,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 73,
+            "src": "45:17:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 47,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "45:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 63,
+              "nodeType": "Block",
+              "src": "92:108:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "id": 51,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 48,
+                    "src": "106:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 61,
+                    "nodeType": "Block",
+                    "src": "157:37:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 59,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 57,
+                            "name": "value",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 48,
+                            "src": "171:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "hexValue": "74727565",
+                            "id": 58,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "179:4:1",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "171:12:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 60,
+                        "nodeType": "ExpressionStatement",
+                        "src": "171:12:1"
+                      }
+                    ]
+                  },
+                  "id": 62,
+                  "nodeType": "IfStatement",
+                  "src": "102:92:1",
+                  "trueBody": {
+                    "id": 56,
+                    "nodeType": "Block",
+                    "src": "113:38:1",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 54,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 52,
+                            "name": "value",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 48,
+                            "src": "127:5:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "hexValue": "66616c7365",
+                            "id": 53,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "135:5:1",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "false"
+                          },
+                          "src": "127:13:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 55,
+                        "nodeType": "ExpressionStatement",
+                        "src": "127:13:1"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 64,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flip",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "82:2:1"
+            },
+            "returnParameters": {
+              "id": 50,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "92:0:1"
+            },
+            "scope": 73,
+            "src": "69:131:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 71,
+              "nodeType": "Block",
+              "src": "248:29:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 69,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 48,
+                    "src": "265:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 68,
+                  "id": 70,
+                  "nodeType": "Return",
+                  "src": "258:12:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 72,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "218:2:1"
+            },
+            "returnParameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 67,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 72,
+                  "src": "242:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "242:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "241:6:1"
+            },
+            "scope": 73,
+            "src": "206:71:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 74,
+        "src": "25:254:1"
+      }
+    ],
+    "src": "0:280:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Flip.sol",
+      "exportedSymbols": {
+        "Flip": [
+          73
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 46,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            73
+          ],
+          "name": "Flip",
+          "scope": 74
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "value",
+              "scope": 73,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bool",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bool",
+                  "type": "bool"
+                },
+                "id": 47,
+                "name": "ElementaryTypeName",
+                "src": "45:4:1"
+              }
+            ],
+            "id": 48,
+            "name": "VariableDeclaration",
+            "src": "45:17:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "flip",
+              "scope": 73,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "82:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 50,
+                "name": "ParameterList",
+                "src": "92:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 48,
+                          "type": "bool",
+                          "value": "value"
+                        },
+                        "id": 51,
+                        "name": "Identifier",
+                        "src": "106:5:1"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 48,
+                                      "type": "bool",
+                                      "value": "value"
+                                    },
+                                    "id": 52,
+                                    "name": "Identifier",
+                                    "src": "127:5:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "66616c7365",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "bool",
+                                      "type": "bool",
+                                      "value": "false"
+                                    },
+                                    "id": 53,
+                                    "name": "Literal",
+                                    "src": "135:5:1"
+                                  }
+                                ],
+                                "id": 54,
+                                "name": "Assignment",
+                                "src": "127:13:1"
+                              }
+                            ],
+                            "id": 55,
+                            "name": "ExpressionStatement",
+                            "src": "127:13:1"
+                          }
+                        ],
+                        "id": 56,
+                        "name": "Block",
+                        "src": "113:38:1"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "=",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 48,
+                                      "type": "bool",
+                                      "value": "value"
+                                    },
+                                    "id": 57,
+                                    "name": "Identifier",
+                                    "src": "171:5:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "74727565",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "bool",
+                                      "type": "bool",
+                                      "value": "true"
+                                    },
+                                    "id": 58,
+                                    "name": "Literal",
+                                    "src": "179:4:1"
+                                  }
+                                ],
+                                "id": 59,
+                                "name": "Assignment",
+                                "src": "171:12:1"
+                              }
+                            ],
+                            "id": 60,
+                            "name": "ExpressionStatement",
+                            "src": "171:12:1"
+                          }
+                        ],
+                        "id": 61,
+                        "name": "Block",
+                        "src": "157:37:1"
+                      }
+                    ],
+                    "id": 62,
+                    "name": "IfStatement",
+                    "src": "102:92:1"
+                  }
+                ],
+                "id": 63,
+                "name": "Block",
+                "src": "92:108:1"
+              }
+            ],
+            "id": 64,
+            "name": "FunctionDefinition",
+            "src": "69:131:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "get",
+              "scope": 73,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 65,
+                "name": "ParameterList",
+                "src": "218:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 72,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "242:4:1"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "242:4:1"
+                  }
+                ],
+                "id": 68,
+                "name": "ParameterList",
+                "src": "241:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 68
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 48,
+                          "type": "bool",
+                          "value": "value"
+                        },
+                        "id": 69,
+                        "name": "Identifier",
+                        "src": "265:5:1"
+                      }
+                    ],
+                    "id": 70,
+                    "name": "Return",
+                    "src": "258:12:1"
+                  }
+                ],
+                "id": 71,
+                "name": "Block",
+                "src": "248:29:1"
+              }
+            ],
+            "id": 72,
+            "name": "FunctionDefinition",
+            "src": "206:71:1"
+          }
+        ],
+        "id": 73,
+        "name": "ContractDefinition",
+        "src": "25:254:1"
+      }
+    ],
+    "id": 74,
+    "name": "SourceUnit",
+    "src": "0:280:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0x98d9f9e8DEbd4A632682ba207670d2a5ACD3c489",
+      "transactionHash": "0x7ff20c3d9f40d2cc34e057a3f961ce4c962489fff118b60a1460fdb85132e9f0"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-12T17:10:05.931Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
